@@ -1483,6 +1483,24 @@ footer {
 }
 
 @media (max-width:480px) {
+  .headline {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+  .cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cta-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-right {
+    gap: 8px;
+  }
+  .nav-icon-btn, .theme-toggle, .hamburger {
+    width: 36px;
+    height: 36px;
+  }
   .scroll-indicator {
     display: none; /* Hide mouse scroll icon on very small screens to save vertical space */
   }
