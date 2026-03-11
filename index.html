@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adnan — Creative Portfolio | Video Editor · Designer · Developer</title>
+  <meta name="description" content="Adnan is a multidisciplinary creative specializing in high-end video editing, visual identity design, and modern web development.">
+  <meta property="og:title" content="Adnan — Creative Portfolio">
+  <meta property="og:description" content="Multidisciplinary creator crafting high-end digital experiences. Video editing, design & development.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+
+  <!-- ── BACKGROUND ── -->
+  <div class="bg-wrapper">
+    <div class="noise-overlay"></div>
+    <div class="grid-bg"></div>
+    <div class="mesh-gradient"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">ADNAN<span class="logo-dot">.</span></div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="nav-icon-btn" id="searchToggle" title="Search">
+        <span class="material-symbols-outlined">search</span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+        <span class="material-symbols-outlined">contrast</span>
+      </button>
+      <a href="#contact" class="btn-nav-cta">Let's Talk</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">
+      <span class="material-symbols-outlined" style="font-size:32px">close</span>
+    </button>
+    <a href="#home"      onclick="closeMobileMenu()">Home</a>
+    <a href="#expertise" onclick="closeMobileMenu()">Expertise</a>
+    <a href="#skills"    onclick="closeMobileMenu()">Skills</a>
+    <a href="#works"     onclick="closeMobileMenu()">Works</a>
+    <a href="#contact"   onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <main>
+    <!-- ═══════════════════════════════════
+         HERO
+    ═══════════════════════════════════ -->
+    <section id="home" class="hero">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Available for projects · 2026
+      </div>
+
+      <h1 class="headline">
+        <span>Motion.</span>
+        <span class="gradient-text">Design.</span>
+        <span>Code.</span>
+      </h1>
+
+      <p class="hero-desc">
+        I craft high-end digital experiences where storytelling meets aesthetics.
+        Video editing, visual identity, and web development — all under one roof.
+        With a deep passion for motion and pixels, I build projects that feel alive, dynamic, and purposeful.
+      </p>
+
+      <div class="cta-group">
+        <a href="#works" class="btn btn-primary">
+          View My Work <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Start a Project</a>
+      </div>
+
+      <div class="scroll-indicator reveal delay-3">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item reveal">
+          <span class="stat-val" data-target="50" data-suffix="+">0</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-item reveal delay-1">
+          <span class="stat-val" data-target="820" data-suffix="+">0</span>
+          <span class="stat-label">Hours of Motion</span>
+        </div>
+        <div class="stat-item reveal delay-2">
+          <span class="stat-val" data-target="5" data-suffix="+">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         MARQUEE
+    ═══════════════════════════════════ -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-item"><span class="material-symbols-outlined">movie_edit</span> Premiere Pro</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">auto_fix_high</span> After Effects</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">palette</span> Figma</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">imagesmode</span> Photoshop</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">brush</span> Illustrator</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">code</span> React / Next.js</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">video_camera_back</span> DaVinci Resolve</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">deployed_code</span> Node.js</div>
+        <div class="marquee-sep"></div>
+        <!-- duplicate for seamless loop -->
+        <div class="marquee-item"><span class="material-symbols-outlined">movie_edit</span> Premiere Pro</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">auto_fix_high</span> After Effects</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">palette</span> Figma</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">imagesmode</span> Photoshop</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">brush</span> Illustrator</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">code</span> React / Next.js</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">video_camera_back</span> DaVinci Resolve</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><span class="material-symbols-outlined">deployed_code</span> Node.js</div>
+        <div class="marquee-sep"></div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════
+         EXPERTISE
+    ═══════════════════════════════════ -->
+    <section id="expertise">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">What I Do</p>
+          <h2 class="section-title">A Unified Creative<br><em>Workflow.</em></h2>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="expertise-card glow-card reveal">
+            <span class="card-number">01</span>
+            <div class="expertise-icon">
+              <span class="material-symbols-outlined">video_library</span>
+            </div>
+            <h3>High-End Editing</h3>
+            <p>Professional color grading, sound design, and narrative-driven storytelling using industry-standard tools. Every frame is intentional.</p>
+            <div class="expertise-tags">
+              <span class="expertise-tag">Premiere Pro</span>
+              <span class="expertise-tag">After Effects</span>
+              <span class="expertise-tag">DaVinci</span>
+            </div>
+          </div>
+
+          <div class="expertise-card glow-card reveal delay-1">
+            <span class="card-number">02</span>
+            <div class="expertise-icon" style="background:linear-gradient(135deg,rgba(6,182,212,0.2),rgba(124,58,237,0.1));border-color:rgba(6,182,212,0.3);">
+              <span class="material-symbols-outlined" style="color:var(--secondary)">design_services</span>
+            </div>
+            <h3>Visual Identity</h3>
+            <p>Crafting memorable brand systems, UI/UX, and visual experiences that feel premium across every touchpoint — digital and print.</p>
+            <div class="expertise-tags">
+              <span class="expertise-tag">Figma</span>
+              <span class="expertise-tag">Photoshop</span>
+              <span class="expertise-tag">Illustrator</span>
+            </div>
+          </div>
+
+          <div class="expertise-card glow-card reveal delay-2">
+            <span class="card-number">03</span>
+            <div class="expertise-icon" style="background:linear-gradient(135deg,rgba(244,63,94,0.18),rgba(251,146,60,0.1));border-color:rgba(244,63,94,0.3);">
+              <span class="material-symbols-outlined" style="color:var(--accent)">terminal</span>
+            </div>
+            <h3>Robust Development</h3>
+            <p>Building scalable, performant web applications with modern frameworks. Smooth animations, accessibility, and clean code as default.</p>
+            <div class="expertise-tags">
+              <span class="expertise-tag">React</span>
+              <span class="expertise-tag">Next.js</span>
+              <span class="expertise-tag">Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Process Steps -->
+        <div class="process-steps reveal" style="margin-top:80px;">
+          <div class="process-step">
+            <span class="process-num">Step 01</span>
+            <h4>Discovery</h4>
+            <p>Understanding your vision, goals, and audience before touching a single tool.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-num">Step 02</span>
+            <h4>Concept</h4>
+            <p>Building the creative direction, moodboards, and initial wireframes or storyboards.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-num">Step 03</span>
+            <h4>Craft</h4>
+            <p>Executing with precision — every detail considered, every pixel intentional.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-num">Step 04</span>
+            <h4>Deliver</h4>
+            <p>Polished output optimized for its platform, with revision rounds built in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         SKILLS / SOFTWARE
+    ═══════════════════════════════════ -->
+    <section id="skills">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">Software Proficiency</p>
+          <h2 class="section-title">Mastery Across<br><em>Every Medium.</em></h2>
+        </div>
+
+        <div class="skills-layout">
+          <!-- Post-Production -->
+          <div class="skill-column reveal">
+            <div class="skill-col-header">
+              <div class="skill-col-dot" style="background:var(--primary)"></div>
+              <span class="skill-col-title">Post-Production</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row">
+                <span class="skill-name"><span class="material-symbols-outlined">movie_edit</span> Premiere Pro</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill col-1" style="--progress:95%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row">
+                <span class="skill-name"><span class="material-symbols-outlined">auto_fix_high</span> After Effects</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill col-1" style="--progress:88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row">
+                <span class="skill-name"><span class="material-symbols-outlined">video_camera_back</span> DaVinci Resolve</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill col-1" style="--progress:82%"></div></div>
+            </div>
+          </div>
+
+          <!-- Visual Design -->
+          <div class="skill-column reveal delay-1">
+            <div class="skill-col-header">
+              <div class="skill-col-dot" style="background:var(--secondary)"></div>
+              <span class="skill-col-title">Visual Design</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row">
+                <span class="skill-name"><span class="material-symbols-outlined">palette</span> Figma</span>
+                <span class="skill-pct" style="color:var(--secondary)">92%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill col-2" style="--progress:92%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row">
+                <span class="skill-name"><span class="material-symbols-outlined">imagesmode</span> Photoshop</span>
+                <span class="skill-pct" style="color:var(--secondary)">90%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill col-2" style="--progress:90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row">
+                <span class="skill-name"><span class="material-symbols-outlined">brush</span> Illustrator</span>
+                <span class="skill-pct" style="color:var(--secondary)">85%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill col-2" style="--progress:85%"></div></div>
+            </div>
+          </div>
+
+          <!-- Web Tech -->
+          <div class="skill-column reveal delay-2">
+            <div class="skill-col-header">
+              <div class="skill-col-dot" style="background:var(--accent)"></div>
+              <span class="skill-col-title">Web Technologies</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row">
+                <span class="skill-name"><span class="material-symbols-outlined">code</span> React / Next.js</span>
+                <span class="skill-pct" style="color:var(--accent)">85%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill col-3" style="--progress:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row">
+                <span class="skill-name"><span class="material-symbols-outlined">data_object</span> JavaScript</span>
+                <span class="skill-pct" style="color:var(--accent)">90%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill col-3" style="--progress:90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row">
+                <span class="skill-name"><span class="material-symbols-outlined">css</span> CSS / Tailwind</span>
+                <span class="skill-pct" style="color:var(--accent)">94%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill col-3" style="--progress:94%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         SELECTED WORKS
+    ═══════════════════════════════════ -->
+    <section id="works" class="works-section">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">Case Studies</p>
+          <h2 class="section-title">Selected<br><em>Works.</em></h2>
+        </div>
+
+        <div class="works-grid reveal">
+          <!-- Card 1 — Large -->
+          <div class="work-card" onclick="window.open('https://discord.com', '_blank')">
+            <img class="work-img contain-img" src="img/rextro-logo.png" alt="Rextro Discord Bot">
+            <div class="work-overlay"></div>
+            <div class="work-arrow">
+              <span class="material-symbols-outlined" style="font-size:18px">north_east</span>
+            </div>
+            <div class="work-info">
+              <span class="work-cat">Discord Bot</span>
+              <h3 class="work-title">Rextro</h3>
+              <p class="work-desc" style="color:var(--text-muted); font-size:0.9rem; margin-top:8px;">A prominent multi-purpose Discord bot featuring advanced AI chat, robust moderation tools, and essential server utilities.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="work-card">
+            <img class="work-img" src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1000" alt="Brand Reveal Sequence">
+            <div class="work-overlay"></div>
+            <div class="work-arrow">
+              <span class="material-symbols-outlined" style="font-size:18px">north_east</span>
+            </div>
+            <div class="work-info">
+              <span class="work-cat">Motion GFX</span>
+              <h3 class="work-title">Brand Reveal Sequence</h3>
+              <p class="work-desc" style="color:var(--text-muted); font-size:0.9rem; margin-top:8px;">A dynamic logo animation and visual identity rollout for a modern tech startup.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="work-card">
+            <img class="work-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000" alt="Crypto Wallet Dashboard">
+            <div class="work-overlay"></div>
+            <div class="work-arrow">
+              <span class="material-symbols-outlined" style="font-size:18px">north_east</span>
+            </div>
+            <div class="work-info">
+              <span class="work-cat">UI/UX Design</span>
+              <h3 class="work-title">Crypto Wallet Dashboard</h3>
+              <p class="work-desc" style="color:var(--text-muted); font-size:0.9rem; margin-top:8px;">Sleek, secure, and user-centered interface design for a decentralized finance app.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════ -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Left -->
+          <div class="reveal">
+            <p class="section-eyebrow">Get In Touch</p>
+            <h2 class="section-title">Let's Create<br><em>Something Real.</em></h2>
+            <p class="contact-lede">
+              Currently accepting new project inquiries for 2026. Whether it's a
+              brand identity, a video project, or a full web build — let's talk.
+            </p>
+
+            <div class="contact-detail">
+              <span class="material-symbols-outlined">mail</span>
+              <a href="mailto:adnan@email.com">tsadnan39@gmail.com</a>
+            </div>
+            <div class="contact-detail">
+              <span class="material-symbols-outlined">location_on</span>
+              <span>Available worldwide · Remote-first</span>
+            </div>
+            <div class="contact-detail">
+              <span class="material-symbols-outlined">schedule</span>
+              <span>Usually replies within 24 hours</span>
+            </div>
+
+            <div class="avail-badge">
+              <span class="pulse"></span>
+              Open to new projects
+            </div>
+          </div>
+
+          <!-- Right — Form -->
+          <div class="reveal delay-2">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Your Name</label>
+                  <input type="text" id="nameInput" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" id="emailInput" placeholder="Enter your email" required>
+                </div>
+              </div>
+              <div class="form-group full">
+                <label>Project Details</label>
+                <textarea id="messageInput" placeholder="Tell me about your vision, timeline and budget..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%;justify-content:center;">
+                Send Inquiry <span class="material-symbols-outlined">send</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">ADNAN.</div>
+
+      <nav class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="social-links">
+        <a href="#" class="social-link" title="Instagram" rel="noopener noreferrer">In</a>
+        <a href="#" class="social-link" title="Behance" rel="noopener noreferrer">Be</a>
+        <a href="#" class="social-link" title="Dribbble" rel="noopener noreferrer">Dr</a>
+        <a href="#" class="social-link" title="X / Twitter" rel="noopener noreferrer">𝕏</a>
+      </div>
+
+      <p class="footer-copy">&copy; 2026 Adnan Creative. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ── SEARCH OVERLAY ── -->
+  <div id="searchOverlay" class="search-overlay">
+    <button class="close-search" id="closeSearch">
+      <span class="material-symbols-outlined" style="font-size:28px">close</span>
+    </button>
+    <div class="search-content">
+      <div class="search-inner">
+        <span class="material-symbols-outlined search-icon-main">search</span>
+        <input type="text" id="searchInput" placeholder="Type to search..." autocomplete="off">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
