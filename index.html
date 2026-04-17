@@ -12,7 +12,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=Outfit:wght@200..700&family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="custom-cursor-active">
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="loader-counter">00</div>
+        <div class="loader-title font-serif">A.</div>
+    </div>
+    
+    <!-- NOISE OVERLAY -->
+    <div class="noise-overlay"></div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
     <div class="bg-grid"></div>
     <div class="bg-elements">
         <div class="bg-selection" style="top: 15%; left: 5%;"></div>
@@ -27,23 +38,36 @@
     <nav class="nav-island glass">
         <div class="nav-content">
             <a href="#hero" class="nav-brand font-serif">A.</a>
-            <div class="nav-links">
-                <a href="#projects">Work</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Background</a>
-                <a href="#contact">Contact</a>
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <a href="#projects">Work</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Background</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <a href="assets/Adnan_TS_CV.pdf" class="btn-cv" download>
+                        <i data-lucide="download" class="cv-icon"></i> CV
+                    </a>
+                    <button class="theme-switch" id="theme-toggle" aria-label="Toggle Theme">
+                        <i data-lucide="sun" id="sun-icon"></i>
+                        <i data-lucide="moon" id="moon-icon" style="display: none;"></i>
+                    </button>
+                </div>
             </div>
-            <div class="nav-actions">
-                <a href="assets/Adnan_TS_CV_Updated_Tech.pdf" class="btn-cv" download>
-                    <i data-lucide="download" class="cv-icon"></i> CV
-                </a>
-                <button class="theme-switch" id="theme-toggle" aria-label="Toggle Theme">
-                    <i data-lucide="sun" id="sun-icon"></i>
-                    <i data-lucide="moon" id="moon-icon" style="display: none;"></i>
-                </button>
-            </div>
+
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
+
+    <div class="page-pathway">
+        <div class="pathway-fill" id="pathway-fill"></div>
+    </div>
 
     <main>
         <!-- Hero -->
@@ -51,10 +75,10 @@
             <div class="container">
                 <div class="hero-layout">
                     <div class="hero-text">
-                        <h1 class="hero-title anim-up">
-                            <span class="design-frame"><span class="light">design.</span></span><br>
-                            <span class="code-mono text-gradient">code.</span><br>
-                            <span class="motion-text">motion.</span>
+                        <h1 class="hero-title">
+                            <span class="title-mask"><span class="hover-word d1 design-frame"><span class="light">design.</span></span></span><br>
+                            <span class="title-mask"><span class="hover-word d2 code-mono text-gradient">code.</span></span><br>
+                            <span class="title-mask"><span class="hover-word d3 motion-text">motion.</span></span>
                         </h1>
                         <p class="hero-sub anim-up d1">
                             Full-stack developer & designer dedicated to the art of<br>
@@ -62,7 +86,7 @@
                         </p>
                         <div class="hero-cta anim-up d2">
                             <a href="#projects" class="btn-main">View Work <i data-lucide="arrow-down"></i></a>
-                            <a href="assets/Adnan_TS_CV_Updated_Tech.pdf" class="btn-outline" download>Download CV <i data-lucide="download"></i></a>
+                            <a href="assets/Adnan_TS_CV.pdf" class="btn-outline" download>Download CV <i data-lucide="download"></i></a>
                         </div>
                     </div>
 
@@ -207,6 +231,17 @@
             <div class="container">
                 <div class="section-label scroll-reveal">
                     <span class="label-mono">Expertise</span>
+                </div>
+                <div class="skills-marquee scroll-reveal">
+                    <div class="marquee-content">
+                        <span>JavaScript</span> <span>TypeScript</span> <span>React</span> <span>Node.js</span> 
+                        <span>C++</span> <span>Python</span> <span>Flutter</span> <span>MongoDB</span> 
+                        <span>UI/UX</span> <span>Photoshop</span> <span>Motion Graphics</span> <span>Vercel</span>
+                        <!-- Duplicate for seamless loop -->
+                        <span>JavaScript</span> <span>TypeScript</span> <span>React</span> <span>Node.js</span> 
+                        <span>C++</span> <span>Python</span> <span>Flutter</span> <span>MongoDB</span> 
+                        <span>UI/UX</span> <span>Photoshop</span> <span>Motion Graphics</span> <span>Vercel</span>
+                    </div>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-group corner-marker corner-marker--tl corner-marker--br scroll-reveal">
